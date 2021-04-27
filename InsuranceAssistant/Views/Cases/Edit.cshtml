@@ -1,0 +1,84 @@
+﻿@model InsuranceAssistant.Models.Case
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Case</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="ID" />
+            <div class="form-group">
+                <label asp-for="ClientName" class="control-label"></label>
+                <input asp-for="ClientName" class="form-control" />
+                <span asp-validation-for="ClientName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Status" class="control-label"></label>
+                <input asp-for="Status" class="form-control" />
+                <span asp-validation-for="Status" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProvidingCompany" class="control-label"></label>
+                <input asp-for="ProvidingCompany" class="form-control" />
+                <span asp-validation-for="ProvidingCompany" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CaseManager" class="control-label"></label>
+                <input asp-for="CaseManager" class="form-control" />
+                <span asp-validation-for="CaseManager" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ClientAge" class="control-label"></label>
+                <input asp-for="ClientAge" class="form-control" />
+                <span asp-validation-for="ClientAge" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FaceAmmount" class="control-label"></label>
+                <input asp-for="FaceAmmount" class="form-control" />
+                <span asp-validation-for="FaceAmmount" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="State" class="control-label"></label>
+                <input asp-for="State" class="form-control" />
+                <span asp-validation-for="State" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Agent" class="control-label"></label>
+                <input asp-for="Agent" class="form-control" />
+                <span asp-validation-for="Agent" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CompletionDate" class="control-label"></label>
+                <input asp-for="CompletionDate" class="form-control" />
+                <span asp-validation-for="CompletionDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProductType" class="control-label"></label>
+                <input asp-for="ProductType" class="form-control" />
+                <span asp-validation-for="ProductType" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Notes" class="control-label"></label>
+                <input asp-for="Notes" class="form-control" />
+                <span asp-validation-for="Notes" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
