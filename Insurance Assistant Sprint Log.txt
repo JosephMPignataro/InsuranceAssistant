@@ -1,0 +1,24 @@
+4/26/2021
+Making insurance assistant case tracker using asp.net 3.1 MVC pattern 
+
+https://www.youtube.com/watch?v=BfEjDD8mWYg video used as a guide for principles
+
+
+Sprint Starting 4/26/2021: make database, ensure only registered users can view and create cases, have cases page, make search functionality
+
+MODEL
+Created databse, used migration "initial setup" to add tables
+
+
+VIEW
+Added welcome text, version number
+Added cases tab 
+Added ShowSearchform view with auto add razor view 
+
+CONTROLLER
+added CasesController.cs
+Added ShowSearchform to Cases Controller 
+
+
+Problem; Search functionalitynot working properly.
+
